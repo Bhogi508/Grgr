@@ -1,92 +1,50 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KING Hacker</title>
-  <link rel="icon" href="king-icon.png" type="image/png"> <!-- Updated favicon -->
-
-  <!-- Updated Meta Tags -->
-  <meta name="description" content="Download KING Hacker tools - Premium hacking solutions for cybersecurity experts. Professional tools for penetration testing and network security.">
-  <meta name="keywords" content="king hacker tools, elite hacking tools, cybersecurity solutions, professional penetration testing, network security tools">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./stylesfamof.css" />
+  <meta charset="UTF-8">
+  <title>Raees Privacy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="h-full m-0 p-0 flex justify-center items-center bg-gradient-to-b from-purple-500 to-pink-500">
+<body>
+  <div class="container">
+    <h1>🛡️ RAEES PRIVACY</h1>
+    <p class="tagline">Protect Your Digital Life — Stay Private</p><button onclick="scanPrivacy()">🔍 Scan Privacy</button>
+<button onclick="showTips()">📚 Jagruk Bano</button>
+<button onclick="showVault()">🔐 Open Secure Vault</button>
 
-  <!-- Main Container -->
-  <div class="relative w-[95%] max-w-[450px] h-[85vh] rounded-2xl overflow-hidden shadow-lg backdrop-blur-lg bg-white/20 border border-white/30 p-6 flex flex-col items-center">
+<div id="resultBox"></div>
+<div id="tipsBox" style="display:none;">
+  <h3>Privacy Tips</h3>
+  <ul>
+    <li>Turn off microphone access for unknown apps</li>
+    <li>Disable location for social apps</li>
+    <li>Use Brave or Firefox Focus browser</li>
+    <li>Always use strong passwords</li>
+  </ul>
+</div>
 
-    <!-- Carousel Section with New Images -->
-    <div class="w-full max-w-[100%] h-[30%] bg-white rounded-xl shadow-md flex items-center justify-center overflow-hidden">
-      <div class="carousel-container">
-        <div class="carousel-slide">
-          <!-- Updated Images -->
-          <div class="carousel-item">
-            <img src="king1.png" alt="KING Hacking Tool 1">
-            <div class="overlay"></div>
-          </div>
-          <div class="carousel-item">
-            <img src="king2.png" alt="KING Security Tool 2">
-            <div class="overlay"></div>
-          </div>
-          <!-- Add 4 more images as needed -->
-        </div>
-      </div>
-    </div>
+  </div>  <script>
+    function scanPrivacy() {
+      const result = document.getElementById("resultBox");
+      result.innerHTML = "🔍 Scanning apps...<br><br>";
 
-    <br><center>    
-      <span class="glass-text">KING HACKER BEST HACKING TOOL</span> <!-- Updated Title -->
-    </center>
-
-    <!-- Buttons Section -->
-    <div class="flex justify-center space-x-14 mt-11">
-      <!-- Updated Contact Button -->
-      <div class="flex flex-col items-center">
-        <button class="Btn" onclick="playSoundAndRedirect('https://api.whatsapp.com/send?phone=923158479223&text=HY%20KING%20HACKER')">
-          <span class="svgContainer">
-            <img src="king-contact.svg" alt="Contact Icon">
-          </span>
-          <span class="BG3"></span>
-        </button>
-        <div class="texttube">
-          <div class="text-small">contact owner</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Packages Section -->
-    <div class="glass-title mt-8">
-      <span class="text-small">Premium Packages</span> <!-- Updated Section Title -->
-    </div>
-
-    <!-- Updated Package Cards -->
-    <div class="flex space-x-7 mt-3">
-      <div class="card">
-        <div class="content">
-          <div class="back">
-            <div class="back-content">
-              <img src="king-standard.svg" alt="Standard Package"> <!-- Updated Icon -->
-              <strong>Elite Package</strong> <!-- Updated Text -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Audio Element -->
-  <audio id="clickSound" src="button-click-sound.wav"></audio>
-
-  <script>
-    // JavaScript remains same with updated URLs if needed
-    function playSoundAndRedirect(url) {
-      const sound = document.getElementById('clickSound');
-      sound.play();
-      setTimeout(() => { window.location.href = url }, 1000);
+      // Simulated results (you can later link real permission APIs in Android)
+      setTimeout(() => {
+        result.innerHTML += `
+          ⚠️ WhatsApp is using microphone<br>
+          ⚠️ Facebook is accessing location<br>
+          ✅ Telegram has minimal tracking<br><br>
+          🔒 Privacy Score: 65/100<br>
+          🧠 Suggestion: Disable mic for WhatsApp, use Brave browser
+        `;
+      }, 2000);
     }
-  </script>
-</body>
-</html>
+
+    function showTips() {
+      document.getElementById("tipsBox").style.display = "block";
+    }
+
+    function showVault() {
+      alert("🔐 Vault feature coming soon in APK version.");
+    }
+  </script></body>
+  </html>
